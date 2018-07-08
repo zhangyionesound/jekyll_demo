@@ -9,6 +9,7 @@ title: 简历
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/jekyll_demo/css/resume.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     </head>
     <body>
@@ -112,7 +113,8 @@ title: 简历
 
                         </div>
                         <div class="block-content">
-                            途牛网站端对接SSO <i>14年左右，途牛开始发力多个品类，比如机票、酒店、金融等单品建设，原有的登录方式无法支持，需要统一的单点登录方式SSO，在底层完成开发后，我负责了整个途牛网站端登录切换到SSO</i>
+                            <a href="#" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="顶部的 Popover 中的一些内容">途牛网站端对接SSO</a>
+                            <i>14年左右，途牛开始发力多个品类，比如机票、酒店、金融等单品建设，原有的登录方式无法支持，需要统一的单点登录方式SSO，在底层完成开发后，我负责了整个途牛网站端登录切换到SSO</i>
                             一元夺宝 <i>模仿网易一元夺宝，作为主力研发人员，完成了网站及M站的首页、产品详情页、开奖、下单、支付对接、会员中心等多个模块的开发工作</i>
                             会员中心重构 <i>将会员中心的代码进行统一和整合，用新的PHP框架实现并迁移至新的代码库，订单列表页面切换为对接订单中心获取数据，帮助产品梳理原有订单中心逻辑</i>
                         </div>
@@ -302,27 +304,7 @@ title: 简历
             Made with <i class="fa fa-heart aria-hidden="true></i> by <a href="https://github.com/zhangyionesound">Yi Zhang</a> <span class="print">( <a href="javascript:window.print()">打印</a> )</span>
         </footer>
         <script type="text/javascript">
-            $(queren).on('click', function () {
-                $(querenpop).toggle()
-                $(document).one('click', function () {
-                    alert(1)
-                    $(querenpop).hide()
-                })
-                $(wrapper).one('click', function () {
-                    alert(1)
-                    $(querenpop).hide()
-                })
-            })
-            $(queren).mouseover(function () {
-                $(querenpop).show();
-            }).mouseout(function () {
-                $(querenpop).hide();
-            });
-
-            $(wrapper).on('click', function (e) {
-                e.stopPropagation()
-            })
-
+            $("[data-toggle='popover']").popover();
         </script>
 
     </body>
