@@ -13,6 +13,7 @@ $('body').on('click', function (event) {
 });
 $(".pop").click(function () {
     $('.pop').popover('hide');          // 当点击一个按钮的时候把其他的所有内容先关闭。
-    $(this).popover('show');          // 然后只把自己打开。
+    console.log(111)
+    $(this).popover('toggle');          // 然后只把自己打开。
 });
 
