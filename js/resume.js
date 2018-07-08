@@ -5,17 +5,17 @@
  */
 $("[data-toggle='popover']").popover();
 $('body').on('click', function (event) {
-    var children = $(".popover").find('*');  //查询出popover下所有的子孙元素
     var target = $(event.target); //当前点击的元素
-    var bool = true;
-    for (var i = 0; i < children.length; i++) {
-        if (children[i] === event.target) {   //判断点击的元素是否在popover中
-            bool = false;
-        } else if (target.hasClass('node_name')) { //popover点击触发的元素，根据targetId的样式
-            bool = false;
-        }
-    }
-    if (bool) {
-        $("[data-toggle='popover']").popover('hide');
+    if (!target.hasClass('popover')
+            && !target.hasClass('pop')
+            && !target.hasClass('popover-content')
+            && !target.hasClass('popover-title')
+            && !target.hasClass('arrow')) {
+        $('.pop').popover('hide');      // 当点击body的非弹出框相关的内容的时候，关闭所有popover
     }
 });
+$(".pop").click(function () {
+    $('.pop').popover('hide');          // 当点击一个按钮的时候把其他的所有内容先关闭。
+    $(this).popover('toggle');          // 然后只把自己打开。
+});
+
