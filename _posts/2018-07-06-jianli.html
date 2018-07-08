@@ -9,9 +9,10 @@ title: 简历
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/jekyll_demo/css/resume.css" />
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="wrapper">
             <header>
                 <div id="name-wrapper">
                     <div id="fullname">
@@ -59,8 +60,8 @@ title: 简历
                 </div>
             </section>
 
-            
-            
+
+
             <section id="skills">
                 <div class="section-title">
                     求职意向
@@ -72,7 +73,7 @@ title: 简历
                             高级产品经理／产品总监
                         </div>
                         <div class="block-subtitle">
-                            
+
                         </div>
                     </div>
 
@@ -90,13 +91,14 @@ title: 简历
                             2015.07 - 至今    途牛旅游网    高级产品经理（产品中心）
                         </div>
                         <div class="block-subtitle">
-                           
+
                         </div>
                         <div class="block-content">
                             <div>2018.03 - 至今 |  负责度假品类供应链多个系统的产品工作，包含确认管理、途牛供应商（N-Booking）、D类、出团、变更系统，
                                 统筹各个系统的产品方案，对方案负责，对工作质量和业务结果负责； </div>
                             <br>
-                            <div>2017.07 - 2018.03 |  负责度假品类供应链<a aria-label="确认管理系统是为订单封装服务的供应链中台交易系统，连接订单、库存、财务等系统模块">确认管理系统</a>、途牛供应商系统（<a href="https://www.tuniu.cn/nbooking/login.html" target="_blank">N-Booking</a>）的产品工作，包含系统维护及相关项目建设； </div>
+                            <div id="querenpop" style="display: none" class="tooltip in top">确认管理系统是为订单封装服务的供应链中台交易系统，连接订单、库存、财务等系统模块</div>
+                            <div>2017.07 - 2018.03 |  负责度假品类供应链<a href="javascript:void(0)" id="queren" aria-label="确认管理系统是为订单封装服务的供应链中台交易系统，连接订单、库存、财务等系统模块">确认管理系统</a>、途牛供应商系统（<a href="https://www.tuniu.cn/nbooking/login.html" target="_blank">N-Booking</a>）的产品工作，包含系统维护及相关项目建设； </div>
                             <br>
                             <div>2015.07 - 2017.07 |  负责度假品类供应链确认管理系统的产品工作，完成了确认管理系统从无到有，从有到优的建设； </div>
                         </div>
@@ -107,7 +109,7 @@ title: 简历
                             2014.08 - 2015.07    途牛旅游网    高级软件工程师（网站事业部）
                         </div>
                         <div class="block-subtitle">
-                            
+
                         </div>
                         <div class="block-content">
                             途牛网站端对接SSO <i>14年左右，途牛开始发力多个品类，比如机票、酒店、金融等单品建设，原有的登录方式无法支持，需要统一的单点登录方式SSO，在底层完成开发后，我负责了整个途牛网站端登录切换到SSO</i>
@@ -132,7 +134,7 @@ title: 简历
                             2012.07 - 2013.07    途牛旅游网    软件工程师（在线预订部）
                         </div>
                         <div class="block-subtitle">
-                            
+
                         </div>
                         <div class="block-content">
                             <div> 从小白开始学习PHP开发，逐渐成为在线预订部的主力研发人员 </div>
@@ -147,7 +149,7 @@ title: 简历
                     项目
                 </div>
                 <div class="section-content">
-                    
+
                     <div class="block">
                         <div class="block-title">
                             邮轮三期-供应商开放项目
@@ -157,7 +159,7 @@ title: 简历
                         </div>
                         <div class="block-content">
                             <p>项目简介：目前邮轮年收客20万人次，有10万组价格数据需要维护，公司产品采购不足20人，需要开放能力给供应商，让我司人员投入到
-                            高附加值的工作上去</p>
+                                高附加值的工作上去</p>
                             <p>我的职责：统筹N-Booking&确认管理系统方案，参与方案产出与评审，制定上线后考核指标，并对上线结果负责。</p>
                             <p>项目预计收益：</p>
                             <ul>
@@ -247,21 +249,12 @@ title: 简历
 
                 </div>
             </section>
-            
+
             <section id="skills">
                 <div class="section-title">
                     技能
                 </div>
                 <div class="section-content">
-
-                    <div class="block">
-                        <div class="block-title">
-                            开发
-                        </div>
-                        <div class="block-content">
-                            PHP, mysql, css/js, python, 微信小程序, git
-                        </div>
-                    </div>
 
                     <div class="block">
 
@@ -291,6 +284,15 @@ title: 简历
                         </div>
                     </div>
 
+                    <div class="block">
+                        <div class="block-title">
+                            开发
+                        </div>
+                        <div class="block-content">
+                            PHP, mysql, css/js, python, 微信小程序, git
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -299,5 +301,19 @@ title: 简历
         <footer>
             Made with <i class="fa fa-heart aria-hidden="true></i> by <a href="https://github.com/zhangyionesound">Yi Zhang</a> <span class="print">( <a href="javascript:window.print()">打印</a> )</span>
         </footer>
+        <script type="text/javascript">
+            $(queren).on('click', function () {
+                $(querenpop).toggle()
+                $(document).one('click', function () {
+                    $(querenpop).hide()
+                })
+            })
+
+            $(wrapper).on('click', function (e) {
+                e.stopPropagation()
+            })
+
+        </script>
+
     </body>
 </html>
