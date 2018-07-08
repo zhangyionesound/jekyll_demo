@@ -313,6 +313,11 @@ title: 简历
                     $(querenpop).hide()
                 })
             })
+            $(queren).mouseover(function () {
+                $(querenpop).show();
+            }).mouseout(function () {
+                $(querenpop).hide();
+            });
 
             $(wrapper).on('click', function (e) {
                 e.stopPropagation()

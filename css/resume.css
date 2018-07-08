@@ -168,8 +168,7 @@ footer {
     letter-spacing:normal;
     line-break:auto;
     line-height:1.428571429;
-    text-align:left;
-    text-align:start;
+    text-align:center;、
     text-decoration:none;
     text-shadow:none;
     text-transform:none;
@@ -177,8 +176,8 @@ footer {
     word-break:normal;word-spacing:normal;word-wrap:normal;
     font-size:12px;opacity:0;
     filter:alpha(opacity=0);
-    color:white;
-    background-color: black;
+    color:#fffffe;
+    background-color: rgba(0,0,0,0.8);
 }
 .tooltip.in{opacity:0.9;filter:alpha(opacity=90)}
 .tooltip.top{margin-top:-3px;padding:5px 0}
