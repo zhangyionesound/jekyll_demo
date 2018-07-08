@@ -16,6 +16,6 @@ $('body').on('click', function (event) {
         }
     }
     if (bool) {
-        $(targetId).popover('hide');
+        $("[data-toggle='popover']").popover('hide');
     }
 });
